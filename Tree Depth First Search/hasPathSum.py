@@ -1,9 +1,9 @@
- Definition for a binary tree node.
- class TreeNode:
+#Definition for a binary tree node.
+class TreeNode:
     def __init__(self, val=0, left=None, right=None):
-         self.val = val
-         self.left = left
-         self.right = right
+        self.val = val
+        self.left = left
+        self.right = right
 class Solution:
     """
     Optimal Time Complexity: O(n) where n is the number of nodes
