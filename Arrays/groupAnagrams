@@ -6,7 +6,7 @@ class Solution:
     - store resulting frequency list and string as key value pairs using hashmap
 
     Time Complexity: O(m *n) where m is the number of strings in the list and n is the length of the string
-    Space Complexity: O(n) where n is the number of strings in the list (the resulting dictionary)
+    Space Complexity: O(m * n) where m is the number of strings in the list and n is the length of the string
     """
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         result = defaultdict(list)
