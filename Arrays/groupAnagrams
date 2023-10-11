@@ -1,0 +1,19 @@
+class Solution:
+    """
+    Algorithm:
+    - create a frequency list for each string
+    - change frequencies using ord()
+    - store resulting frequency list and string as key value pairs using hashmap
+
+    Time Complexity: O(m *n) where m is the number of strings in the list and n is the length of the string
+    Space Complexity: O(n) where n is the number of strings in the list (the resulting dictionary)
+    """
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        result = defaultdict(list)
+        for s in strs:
+            freq = [0] * 26
+            for char in s:
+                freq[ord(char) - ord('a')] += 1
+
+            result[tuple(freq)].append(s)
+        return result.values()
