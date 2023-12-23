@@ -1,0 +1,10 @@
+def reverseStr(str):
+
+    result = ""
+    for i in range(len(str)):
+        result += str[len(str)-1-i]
+    print(result)
+
+if __name__ == '__main__':
+    reverseStr("hello")
+
